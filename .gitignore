@@ -1,0 +1,28 @@
+# Data directories
+data/raw/
+data/processed/
+
+# Model files
+models/saved/
+models/checkpoints/
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
