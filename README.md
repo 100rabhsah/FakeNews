@@ -6,6 +6,22 @@ A hybrid deep learning model for fake news detection using BERT and BiLSTM with 
 
 This project implements a state-of-the-art fake news detection system that combines the power of BERT (Bidirectional Encoder Representations from Transformers) with BiLSTM (Bidirectional Long Short-Term Memory) and attention mechanisms. The model is designed to effectively identify fake news articles by analyzing their textual content and linguistic patterns.
 
+## Data and Model Files
+
+The project uses the following datasets and model files:
+
+### Datasets
+- Raw and processed datasets are available at: [Data Files](https://drive.google.com/drive/folders/1uFtWVEjqupSGV7_6sYAxPG52Je1MAigh?usp=sharing)
+  - Contains both raw and processed versions of the datasets
+  - Includes LIAR and Kaggle Fake News datasets
+  - Preprocessed versions ready for training
+
+### Model Files
+- Trained model checkpoints are available at: [Model Files](https://drive.google.com/drive/folders/1d1EXjLlYof56yEa9F6qFDPKqO359vnRw?usp=sharing)
+  - Contains saved model weights
+  - Includes best model checkpoints
+  - Model evaluation results
+
 ## Project Structure
 
 ```
@@ -59,17 +75,22 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Prepare your dataset:
+1. Download the required files:
+   - Download datasets from the [Data Files](https://drive.google.com/drive/folders/1uFtWVEjqupSGV7_6sYAxPG52Je1MAigh?usp=sharing) link
+   - Download pre-trained models from the [Model Files](https://drive.google.com/drive/folders/1d1EXjLlYof56yEa9F6qFDPKqO359vnRw?usp=sharing) link
+   - Place the files in their respective directories as shown in the project structure
+
+2. Prepare your dataset:
    - Place your dataset in the `data/raw` directory
    - The dataset should have at least two columns: 'text' and 'label'
    - Supported formats: CSV, TSV
 
-2. Train the model:
+3. Train the model:
 ```bash
 python src/train.py
 ```
 
-3. Model evaluation metrics and visualizations will be generated in the `visualizations` directory
+4. Model evaluation metrics and visualizations will be generated in the `visualizations` directory
 
 ## Model Architecture
 
